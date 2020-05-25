@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'Gerardo Tarragona Serna'
-export const siteTitle = 'Next.js blog'
+export const siteTitle = 'Blog'
 
 export default function Layout({ children, home }) {
     return (
@@ -15,12 +15,12 @@ export default function Layout({ children, home }) {
                     name="description"
                     content="Building my personal blog site with Next.js"
                 />
-                <meta
+                {/* <meta
                     property="og:image"
                     content={`https://og-image.now.sh/${encodeURI(
                         siteTitle
                     )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-                />
+                /> */}
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
